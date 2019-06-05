@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%=title%></title>
+</head>
+<body>
+  这是一些内容
+  <ul>
+    <%for (let i=0;i<arr.length;i++){%>
+      <li>姓名:<%=arr[i]["name"]%>年龄:<%=arr[i]["age"]%>性别:<%=arr[i]["gender"]%></li>
+      <%}%>
+  </ul>
+  <div>
+    这是显示的json内容:<%=json_data.name%><%=json_data.age%><%=json_data.gender%>
+  </div>
+</body>
+</html>

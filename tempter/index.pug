@@ -1,0 +1,17 @@
+doctype
+html
+  head
+    title this is pug tempter
+    script.
+      function aaa(){
+        alert('show aaa')
+      }
+  body
+    div(class="div",style="width:300px;height:300px;background-color:#ccc;text-align:center;line-height:300px;") 这是div中的内容
+    button(onclick='javascript:aaa()') 点击按钮
+    div 显示的服务器端输入的参数#{rand_num}
+    ul
+    each item in arr
+      li #{item.name}年龄#{item.age}性别#{item.gender}
+    
+    div 这是显示的json数据:#{json_data.name} #{json_data.age} #{json_data.gender}
